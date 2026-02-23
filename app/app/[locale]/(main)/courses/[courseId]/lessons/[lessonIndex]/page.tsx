@@ -12,6 +12,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     .replace(/\b\w/g, (c) => c.toUpperCase());
   return {
     title: `Lesson ${Number(lessonIndex) + 1} — ${title}`,
+    description: `Complete Lesson ${Number(lessonIndex) + 1} of ${title} on Superteam Academy. Earn XP and credentials on Solana.`,
   };
 }
 
